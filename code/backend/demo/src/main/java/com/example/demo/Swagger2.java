@@ -43,7 +43,7 @@ public class Swagger2 {
                 .title("keep+ api")
                 .description("keep+的swagger2 api文档")
                 //创建人
-                .termsOfServiceUrl("http://139.196.227.28:8080")
+                .termsOfServiceUrl("http://139.196.227.28:8080/keep+")
                 .contact(new Contact("Zhe Li",
                         "http://139.196.227.28:8080",
                         "lz18064638846@sjtu.edu.cn"))
