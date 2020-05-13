@@ -1,6 +1,5 @@
 package com.example.demo.serviceimpl;
 
-import javax.servlet.http.HttpSession;
 import com.example.demo.message.request.SignUpForm;
 import com.example.demo.message.response.JwtResponse;
 import com.example.demo.model.User;

@@ -1,28 +1,16 @@
 package com.example.demo.controller;
 
+import javax.validation.Valid;
 import com.example.demo.message.request.LoginForm;
 import com.example.demo.message.request.SignUpForm;
-import com.example.demo.message.response.JwtResponse;
-import com.example.demo.model.User;
-import com.example.demo.security.jwt.JwtProvider;
-import com.example.demo.repository.UserRepository;
-import com.example.demo.security.services.UserPrinciple;
 import com.example.demo.service.AuthService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.authentication.AuthenticationManager;
-import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.security.core.Authentication;
-import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
-
-import javax.validation.Valid;
 
 /**
  * AuthController Class

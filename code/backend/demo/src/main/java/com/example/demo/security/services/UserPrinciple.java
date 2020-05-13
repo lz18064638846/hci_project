@@ -1,23 +1,21 @@
 package com.example.demo.security.services;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.example.demo.model.User;
-import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.authority.SimpleGrantedAuthority;
-import org.springframework.security.core.userdetails.UserDetails;
-
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 import java.util.Objects;
-import java.util.stream.Collectors;
+import com.example.demo.model.User;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
 
 /**
  * UserPrinciple class
  *
  * implement UserDetails to adapt with spring security
  *
- * @author Yuxuan Liu
+ * @author Zhe Li
  *
  * @date 2020/05/01
  */
