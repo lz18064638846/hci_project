@@ -30,11 +30,11 @@ public class JwtProvider {
     private String jwtSecret;
 
     @Value("${app.jwtExpiration}")
-    private int jwtExpiration;
+    private Long jwtExpiration;
 
     public String generateJwtToken(UserDetails userPrincipal) {
         Date createdDate = clock.now();
-        Date expirationDate = new Date(createdDate.getTime() + jwtExpiration);
+        Date expirationDate = new Date(createdDate.getTime() + Long.valueOf(jwtExpiration));
         return Jwts.builder()
                 .setSubject((userPrincipal.getUsername()))
                 .setIssuedAt(createdDate)

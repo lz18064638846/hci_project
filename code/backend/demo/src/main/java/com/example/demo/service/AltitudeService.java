@@ -11,7 +11,8 @@ public interface AltitudeService {
      * This service handle user's altitude data and return hint which could help user do better.
      *
      * @param altitudeForm Form that post position of six critical part of human body.
+     * @param userId id of user
      * @return Hint that help user do better.
      */
-    String altitudeCorrect(AltitudeForm altitudeForm);
+    String altitudeCorrect(AltitudeForm altitudeForm, Long userId);
 }
